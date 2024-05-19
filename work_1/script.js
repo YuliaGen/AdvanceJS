@@ -52,5 +52,4 @@ musicCollection.musicAlb[Symbol.iterator] = function () {
 }
 for (let alboms of musicCollection.musicAlb) {
         console.log(`Название ${alboms.title}, Год ${alboms.year}`);
-}
-
+};
