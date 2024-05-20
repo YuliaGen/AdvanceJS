@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <label class="label">Ваш комментарий:</label>
+    
+    <p>Всего символов: <span class="count">0</span>
+        <br>
+
+    <textarea class="user_comment" placeholder="Введите текст отзыва от 50 до 500 символов" style="width:450px; height:250px;" onkeyup="countLetters();"></textarea>
+    <button class="btn">Отправить</button>
+    <div class="error"></div>
+    <div class="reviews"></div>
+   
+    <br>
+  
+    
+    <script src="script.js"></script>
+
+    <script>
+        const textarea = document.querySelector("textarea");
+const count = document.querySelector(".count");
+
+    function countLetters() {
+    const text = textarea.value; // #1
+    const textlength = textarea.value.length; // #2
+    count.innerText = `${textlength}`; // #3
+    }
+    </script>
+</body>
+</html>
