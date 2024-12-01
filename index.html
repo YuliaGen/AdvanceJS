@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+     <!-- добавления отзыва -->
+
+    <form class="block form" id="review-form">
+      <h2>Добавить отзыв</h2>
+      <div class="input">
+        <input
+          type="text"
+          placeholder="Название продукта"
+          class="product-name"
+        
+          required
+        />
+        <br>
+                <textarea
+          placeholder="Отзыв"
+          class="review-text"
+          placeholder="Введите текст отзыва от 50 до 500 символов"
+          style="width: 450px; height: 250px"
+                ></textarea>
+          <br>
+        <button class="form__submit-btn" type="submit">Добавить отзыв</button>
+      </div>
+    </form> 
+
+    <!-- просмотр отзывов -->
+    <h2>Просмотр отзывов</h2>
+    <section id="product-list">
+      <summary class="review"></summary>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
